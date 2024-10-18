@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/884b5252cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="preloader"></div>
     <div id="header">
        <div class="container">
         <nav>
@@ -25,8 +26,7 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Cyber-Security & Network Engineer</p>
-            <h1>Hi, I'm <span>AbdiHakim</span><br>Ali from Kenya.</h1>
+            <h1>Hi, I'm <span id="typed-text"></span><br>from Kenya.</h1>
         </div>
        </div> 
     </div>
@@ -37,6 +37,7 @@
                 <div class="about-col-1">
                     <img src="images/Kimu.jpg" >
                 </div>
+            </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>Greetings! I'm Abdihakim Ali Ahmed, a dedicated Cybersecurity and Network Engineer. With a deep commitment to fortifying digital infrastructures, I specialize in implementing proactive measures and innovative solutions to safeguard against evolving cyber threats. My expertise spans network security, penetration testing, incident response, and compliance, ensuring organizations maintain robust defenses in today's digital landscape.</p>
@@ -96,7 +97,7 @@
                     </ul>
                 </div>   
             </div>
-        </div>
+        
     </div>
     <!------------------services---------------->
     <div id="services">
@@ -174,7 +175,6 @@
     <!------------contact--------------->
     <div id="contact">
         <div class="container">
-            <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>aliabdihakimahmed@gmail.com</p>
@@ -197,7 +197,6 @@
                     </form>
                     <span id="msg"></span>
                 </div>
-            </div>
         </div>
         <div class="copyright">
             <p>Copyright &#169; Abdihakim Ali Ahmed, Founder of <i class="fa-solid fa-heart-pulse"></i><li><a href="../AfriSecureTech Hub Company/index.html" class="btn btn2">AfriSecureTech Hub</a></li></p>
@@ -246,5 +245,26 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+        var typed = new Typed("#typed-text", {
+          strings: ["AbdiHakim Ali", "a Cybersecurity Specialist", "an IT Expert", "a Network Engineer"], // Add your dynamic text here
+          typeSpeed: 140, // Speed of typing
+          backSpeed: 80, // Speed of erasing
+          loop: true, // Repeat the loop
+          smartBackspace: true, // Only backspace what doesn't match the previous string
+        });
+      </script>
+
+      <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+      </script>
+
 </body>
 </html>
