@@ -26,8 +26,9 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <h1>Hi, I'm <span id="typed-text"></span><br>from Kenya.</h1>
-        </div>
+            <h1>Hi, I'm <span>Abdihakim Ali Ahmed</span><br>from Kenya.</h1>
+            <h2 id="typed-text"></h2> <!-- Separate element for the auto-typing text -->
+        </div>        
        </div> 
     </div>
     <!-- -----------about----------------- -->
@@ -105,13 +106,13 @@
             <div class="services-list">
                      <div>
                         <i class="fa-solid fa-code"></i>
-                        <h2>Network Design and Security</h2>
-                        <p>Network design and security involved with planning and implementing secure computer networks to ensure efficient data communication while protecting against unauthorized access and cyber threats. It includes configuring firewalls, VPNs, and encryption protocols to safeguard sensitive information and maintain network integrity. </p>
+                        <h2>IT Systems Technician</h2>
+                        <p> As a Technician, I specialize in diagnosing and repairing hardware and software issues for desktops, laptops, and peripheral devices. I have hands-on experience with system upgrades, troubleshooting, antivirus installation, and network configuration. Through my role, I ensure optimal system performance and support clients by providing tailored technical solutions, improving efficiency and enhancing security in their IT environments. </p> 
                      </div>
                      <div>
                         <i class="fa-solid fa-crop"></i>
-                        <h2>Technician</h2>
-                        <p> As a Technician, I specialize in diagnosing and repairing hardware and software issues for desktops, laptops, and peripheral devices. I have hands-on experience with system upgrades, troubleshooting, antivirus installation, and network configuration. Through my role, I ensure optimal system performance and support clients by providing tailored technical solutions, improving efficiency and enhancing security in their IT environments. </p>                        
+                        <h2>Network Design and Security</h2>
+                        <p>Network design and security involved with planning and implementing secure computer networks to ensure efficient data communication while protecting against unauthorized access and cyber threats. It includes configuring firewalls, VPNs, and encryption protocols to safeguard sensitive information and maintain network integrity. </p>                
                          </div>
                      <div>
                         <i class="fa-brands fa-app-store"></i>
@@ -248,17 +249,48 @@
       </script>
 
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
       <script>
-        var typed = new Typed("#typed-text", {
-          strings: ["AbdiHakim Ali", "a Cybersecurity Specialist", "an IT Expert", "a Network Engineer"], // Add your dynamic text here
-          typeSpeed: 140, // Speed of typing
-          backSpeed: 80, // Speed of erasing
-          loop: true, // Repeat the loop
-          smartBackspace: true, // Only backspace what doesn't match the previous string
-        });
-      </script>
+                function autoType() {
+                                        const phrases = [
+                        "Here to secure and protect 🌐",
+                        "An Enthusiastic IT Technician & Cyber Defender 🔧",
+                        "Committed to making the web a safer place 🌎",
+                        "Pushing boundaries in cybersecurity every day 🚀",
+                        "Future-ready for the evolving digital world 🔒",
+                        "Innovating, learning, and defending 🛠️",
+                        "Join me on a journey of tech and security 💼",
+                    ];
+            let i = 0;
+            let j = 0;
+            const element = document.getElementById("typed-text");
 
+            function type() {
+                if (j < phrases[i].length) {
+                    element.innerHTML += phrases[i][j];
+                    j++;
+                    setTimeout(type, 100); // Typing speed
+                } else {
+                    setTimeout(erase, 1000); // Pause before erasing
+                }
+            }
+
+            function erase() {
+                if (j > 0) {
+                    element.innerHTML = phrases[i].substring(0, j - 1);
+                    j--;
+                    setTimeout(erase, 50); // Erasing speed
+                } else {
+                    i = (i + 1) % phrases.length;
+                    setTimeout(type, 500); // Pause before typing next phrase
+                }
+            }
+
+            type();
+        }
+
+        // Start auto-typing when the page loads
+        window.addEventListener("load", autoType);
+      </script>
       <script>
         var loader = document.getElementById("preloader");
 
