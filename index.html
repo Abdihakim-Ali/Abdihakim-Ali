@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdihakim Ali Ahmed | President and Co-Owner of AfriSecureTech Hub Portfolio's </title>
+    <title>Abdihakim Ali Ahmed | Co-Owner of AfriSecureTech Hub Portfolio's </title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/Kimu.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="images/name-01.png" type="image/png">
     <script src="https://kit.fontawesome.com/884b5252cc.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="preloader"></div>
+    <div class="scroll-dots">
+        <a href="#header" class="dot active"></a>
+        <a href="#about" class="dot"></a>
+        <a href="#portfolio" class="dot"></a>
+        <a href="#services" class="dot"></a>
+        <a href="#contact" class="dot"></a>
+    </div>
     <div id="header">
        <div class="container">
         <nav>
@@ -25,127 +33,298 @@
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
+        <div class="header-slider">
+                <img src="images/daniel.jpg" class="slide active">
+                <img src="images/background.jpg" class="slide">
+            </div>
         <div class="header-text">
-            <h1>Hi, I'm <span>Abdihakim Ali Ahmed</span><br>from Kenya.</h1>
-            <h2 id="typed-text"></h2> <!-- Separate element for the auto-typing text -->
+            <h1>Hi, I'm <span>Abdihakim Ali Ahmed,</span><br>from Kenya.</h1>
+            <p class="hero-subtext">
+            Securing Digital Frontiers | Blue Team Defender & Cybersecurity Engineer
+           </p>
+        <div class="btn-sci">
+            <a href="images/ABDIHAKIMALIAHMED CV 2026.pdf" download class="win">Download CV</a>
+        <div class="social-icons">
+            <a href="https://github.com/Abdihakim-Ali" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter-square"></i>
+            </a>
+            <a href="https://instagram.com/netsecxpert10" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abdihakim-ali-ahmed/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        </div>
         </div>        
        </div> 
     </div>
     <!-- -----------about----------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/Kimu.jpg" >
+     <div class="container">
+        <section id="about" class="about">
+            <div class="about-container">
+                <!-- LEFT: IMAGE -->
+                <div class="about-image">
+                    <img src="images/Kimu.jpg" alt="Abdihakim Ali Ahmed"> 
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Greetings! I'm Abdihakim Ali Ahmed, a dedicated Cybersecurity and Network Engineer. With a deep commitment to fortifying digital infrastructures, I specialize in implementing proactive measures and innovative solutions to safeguard against evolving cyber threats. My expertise spans network security, penetration testing, incident response, and compliance, ensuring organizations maintain robust defenses in today's digital landscape.</p>
-                    <br>
-                    <br>
-                    <p>Beyond technical proficiency, I bring a strategic vision as the founder of AfriSecureTech Hub. Our mission is to lead Africa's cybersecurity frontier by fostering collaboration and knowledge-sharing among industry professionals. Through this initiative, we aim to elevate cybersecurity standards across the continent, empowering organizations to thrive securely in a digitally interconnected world.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                <!-- RIGHT: TEXT -->
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                    Motivated and security-focused Blue Team Defender and Network Engineer with strong hands-on experience in IT infrastructure, system troubleshooting, and network configuration. Currently serving as Head of the RMA Department at Computer Planet, where I lead technical operations and improve service workflows.
+                    </p>
+                    <p>
+                    My journey in technology is driven by curiosity, discipline, and a deep desire
+                    to understand how systems work — and how to protect them. 
+                    and I’m actively building advanced cybersecurity skills through labs and real-world practice.
+                    </p>
+                    <p>
+                    Driven by a long-term vision to grow into a highly skilled Blue Team Security Professional, specializing in threat detection, incident response, and network defense, while building AfriSecureTech Hub, a future-focused cybersecurity organization dedicated to protecting digital infrastructure across Africa.
+                    </p>
+                    <div class="about-stats">
+                        <div>
+                            <h3>2+</h3>
+                            <!-- <img src="images/graduated.png" alt=""> -->
+                            <span>Years Learning IT</span>
+                        </div>
+                        <div>
+                            <h3>10+</h3>
+                            <!-- <img src="images/repair-tools.png" alt=""> -->
+                            <span>Hands-on Labs</span>
+                        </div>
+                        <div>
+                            <h3>100%</h3>
+                            <!-- <img src="images/hourglass.png" alt=""> -->
+                            <span>Commitment</span>
+                        </div>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                </div>
+            </div>
+        </section>
+     </div>
+<!---------------portfolio----------------->
+        <section id="portfolio" class="portfolio">
+           <div class="container">
+            <h2 class="port">My Portfolio</h2> 
+            <!-- Tabs -->
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="skills">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="images/PYTHON.png" alt="Python Virtuoso">
+                    <h3 class="python">Basic Python Development</h3>
+                        <ul class="desc">
+                            <li>Learning Python fundamentals, including syntax and scripting basics.</li>
+                            <li>Building logical thinking and problem-solving skills through coding exercises.</li>
+                            <li>Exploring how Python automation supports cybersecurity and system tasks.</li>
+                        </ul>
+                </div>
+                <div class="card">
+                    <img src="images/boitumelo-o_tcYADlSt8-unsplash.jpg" alt="IT Repairs Hardware & Software">
+                    <h3>System Setup & Technical Support</h3>
+                    <ul class="desc">
+                        <li>Hands-on experience with system setup and configuration.</li>
+                        <li>Troubleshooting hardware and software issues efficiently.</li>
+                        <li>Providing reliable technical support in practical work environments.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="images/kevin-ache-2JJ3wBHu4_0-unsplash.jpg" alt="Networking Tools & Security">
+                    <h3>Networking Tools & Security</h3>
+                    <ul class="desc">
+                        <li>Strong grasp of networking concepts, architectures, and protocols.</li>
+                        <li>Experience using networking tools for monitoring and troubleshooting.</li>
+                        <li>Understanding of security fundamentals to maintain safe network operations.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="images/LINUX.jpg" alt="Linux CLI">
+                    <h3>Linux Command Line Interface</h3>
+                    <ul class="desc">
+                        <li>Proficient in Linux CLI for navigation and system management.</li>
+                        <li>Performing basic security and administrative tasks via command line.</li>
+                        <li>Continuously improving Linux skills for advanced cybersecurity applications.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <!-- Experience -->
+            <div class="tab-contents" id="experience">
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="images/Penetration testing.jpeg" alt="Penetration Testing">
+                        <h3>Penetration Testing (Learning Phase)</h3>
+                        <p>2025 – Present</p>
                         <ul>
-                            <li><span>2024</span><br>Python Virtuoso </li>
-                            <li><span>2024</span><br>IT Repairs Hardware & Software </li>
-                            <li><span>2024</span><br> Proficient with Networking Tools and Security</li>
-                            <li><span>2024</span><br> Proficient with Linux Command Line Interface</li>
+                            <li>Currently learning the fundamentals of penetration testing and ethical hacking concepts.</li>
+                            <li>Gaining hands-on experience with basic vulnerability assessment tools and methodologies.</li>
+                            <li>Understanding core security principles including CIA Triad, CIANA, threats, and vulnerabilities.</li>
+                            <li>Practicing basic testing on labs, virtual environments, and controlled systems.</li>
+                            <li>Actively studying for Security+, Linux+, and Pentest+ certifications.</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="card">
+                        <img src="images/network admin.jpg" alt="Networking Fundamentals">
+                        <h3>Networking Fundamentals</h3>
+                        <p>2024 – Present</p>
                         <ul>
-                            <li><span>2024</span><br>Penetration Testing</li>
-                                <ol>
-                                    <li>Performed vulnerability assessments and exploitation using industry-standard tools.</li>
-                                    <li>Identified and reported critical security risks with mitigation strategies.</li>
-                                    <li>Conducted penetration tests on web applications, networks, and systems.</li>
-                                </ol>
-                            </li>
-                            <li><span>2024</span><br>Team Lead at AfriSecureTech Hub</li>
-                                <ol>
-                                    <li>Led a team of IT professionals to deliver cybersecurity services and IT support.</li>
-                                    <li>Managed and streamlined workflows for network security and system troubleshooting.</li>
-                                    <li>Developed client-focused solutions for system defenses and risk management.</li>
-                                </ol>
-                            </li>
-                            <li><span>2024</span><br>Network Administrator</li>
-                                <ol>
-                                    <li>Configured, maintained, and optimized network infrastructure.</li>
-                                    <li>Monitored network performance and resolved connectivity issues.</li>
-                                    <li>Implemented security protocols for network protection against cyber threats.</li>
-                                </ol>
-                            </li>
-                            <li><span>2024</span><br>Expert in Hardware and Software Installation & Repair</li>
-                                <ol>
-                                    <li>Performed installation and configuration of hardware components (CPUs, RAM, hard drives, etc.)</li>
-                                    <li>Installed and configured operating systems (Windows, Linux) and essential software.</li>
-                                    <li>Diagnosed and resolved hardware and software issues.</li>
-                                    <li>Conducted system upgrades and optimization to enhance performance.</li>
-                                    <li>Provided technical support and training to clients on using repaired systems.</li>
-                                </ol>                                        
+                            <li>Basic network configuration, device setup, and network troubleshooting.</li>
+                            <li>Understanding of IP addressing, subnetting, VLANs, and routing basics.</li>
+                            <li>Knowledge of network architectures including MPLS, leased lines, WAN, MAN, and campus networks.</li>
+                            <li>Familiar with OSI and TCP/IP models, their layers, and functions.</li>
+                            <li>Assisted in identifying and resolving basic connectivity and performance issues.</li>
+                            <li>Gaining hands-on experience with switches, routers, and network topologies.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <img src="images/REPAIRS.jpg" alt="System Setup and Testing">
+                        <h3>System Setup & Testing</h3>
+                        <p>2025 – 2026</p>
+                        <ul>
+                            <li>Installed and configured operating systems and required drivers.</li>
+                            <li>Performed hardware and software testing, including audio, display, and system performance.</li>
+                            <li>Conducted final system checks to ensure devices were ready for end users.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tab-contents" id="education">
+            </div>
+    <!-- Education -->
+    <div class="tab-contents" id="education">
+        <div class="cards-container">
+            <div class="card">
+                <img src="images/CISCO.png" alt="Cisco Networking Academy">
+                <h3>Cisco Networking Academy</h3>
+                <p>2023 – Present</p>
+                <ul>
+                    <li>Completed courses and earned certificates in:</li>
                     <ul>
-                        <li><span>2023 - Current</span><br>Cisco Networking Academy</li>
-                        <li><span>2023 - Current</span><br>JKUAT University</li>
-                        <li><span>2017 - 2020</span><br>Mandera High School</li>
+                        <li>Introduction to Cybersecurity</li>
+                        <li>CCNA v7: Introduction to Networking</li>
+                        <li>CCNA v7: Network Security </li>
+                        <li>NDG Linux Unhatched</li>
                     </ul>
-                </div>   
+                    <li>Earned digital badges accessible via Credly, showcasing practical skills and learning progress.</li>
+                    <li>Continuing to expand knowledge in networking, security, and Linux fundamentals.</li>
+                </ul>
+                <p>View badges and certificates: 
+                    <a href="https://www.credly.com/users/abdihakim-ali." target="_blank">Credly Profile</a>
+                </p>
+            </div>
+            <div class="card">
+                <img src="images/7.-JKUAT-01-e1608583468582.png" alt="JKUAT University">
+                <h3>JKUAT University</h3>
+                <p>2023 – Present (SODEL, Expected Graduation: 2027)</p>
+                <ul>
+                    <li>Pursuing Bachelor of Science in Information Technology (BSc IT).</li>
+                    <li>Currently studying core areas such as Networking, Cybersecurity, Linux, Programming, and Database Management.</li>
+                    <li>Transitioned from full-time to SODEL to balance studies with professional and personal growth.</li>
+                    <li>Gaining practical experience through labs, projects, and hands-on IT tasks.</li>
+                    <li>Focused on building strong foundations for a career in cybersecurity and IT infrastructure.</li>
+                    <li>Actively applying classroom knowledge to real-world IT and cybersecurity projects.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="images/MSS1.jpg" alt="Mandera High School">
+                <h3>Mandera Secondary School</h3>
+                <p>2017 – 2020</p>
+                <ul>
+                    <li>Achieved qualifying grades and joined JKUAT with a B- grade.</li>
+                    <li>Gained resilience and adaptability by learning in a challenging environment.</li>
+                    <li>Developed a strong interest in technology and cybersecurity.</li>
+                    <li>Inspired to bring IT and tech solutions to underserved areas, laying the foundation for future projects.</li>
+                    <li>Built foundational skills in problem-solving, discipline, and self-motivation.</li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
+</section>
     <!------------------services---------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
+        <section id="services" class="services">
+            <h2>My Services</h2>
             <div class="services-list">
-                     <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>IT Systems Technician</h2>
-                        <p> As a Technician, I specialize in diagnosing and repairing hardware and software issues for desktops, laptops, and peripheral devices. I have hands-on experience with system upgrades, troubleshooting, antivirus installation, and network configuration. Through my role, I ensure optimal system performance and support clients by providing tailored technical solutions, improving efficiency and enhancing security in their IT environments. </p> 
-                     </div>
-                     <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>Network Design and Security</h2>
-                        <p>Network design and security involved with planning and implementing secure computer networks to ensure efficient data communication while protecting against unauthorized access and cyber threats. It includes configuring firewalls, VPNs, and encryption protocols to safeguard sensitive information and maintain network integrity. </p>                
-                         </div>
-                     <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>Cyber-Security Consultancy</h2>
-                        <p>Cybersecurity consultancy provides expert advice and solutions to improve organizations' security posture. Consultants assess current security measures, develop strategies to mitigate risks, and implement policies aligned with industry standards and regulatory requirements </p>
-                     </div>
-                     <!-- New Blue Team Services -->
-                    <div>
-                        <i class="fa-solid fa-shield-alt"></i>
-                        <h2>Incident Detection and Response</h2>
-                        <p>Incident detection and response focuses on identifying and reacting to security threats in real-time. Using advanced monitoring tools and techniques, the blue team identifies suspicious activities, isolates compromised systems, and implements containment measures to prevent further damage. This service is essential for minimizing the impact of cyberattacks on business operations.</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-lock"></i>
-                        <h2>Threat Intelligence and Monitoring</h2>
-                        <p>Threat intelligence and monitoring provide continuous surveillance of networks and systems to detect and counter emerging cyber threats. This service includes gathering data on known threats, analyzing patterns of potential breaches, and applying proactive measures to strengthen defenses before an attack occurs.</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-user-shield"></i>
-                        <h2>Security Awareness Training</h2>
-                        <p>Security Awareness Training educates employees on cybersecurity best practices to prevent human errors that lead to breaches. This service includes simulated phishing attacks and regular training sessions to ensure staff can identify and avoid common threats, enhancing the overall security culture of the organization.</p>
-                    </div>
+                <div class="sevices-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>IT Systems Technician</h2>
+                    <p>
+                        I support daily IT operations by assisting with system setup, software installation,
+                        and basic troubleshooting. My focus is on keeping systems stable, functional, and easy to use.
+                    </p>
+                    <p>
+                        I also help maintain devices and ensure users experience minimal downtime while working
+                        in a secure and well-organized environment.
+                    </p>
+                </div>
+                <div class="sevices-box">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Network Design & Security</h2>
+                    <p>
+                        I assist in designing and maintaining network setups that allow devices to communicate
+                        efficiently and keep services running smoothly.
+                    </p>
+                    <p>
+                        My work includes applying basic security configurations and monitoring connections
+                        to reduce risks and support safe data access.
+                    </p>
+                </div>
+                <div class="sevices-box">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Cybersecurity Consultancy</h2>
+                    <p>
+                        I help identify security gaps within systems and provide guidance on improving protection
+                        using practical and realistic approaches.
+                    </p>
+                    <p>
+                        My focus is on helping individuals and small teams understand risks and apply simple
+                        security practices that make a real difference.
+                    </p>
+                </div>
+                <div class="sevices-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>Threat Intelligence & Monitoring</h2>
+                    <p>
+                        I monitor systems and logs to identify unusual behavior that may indicate potential
+                        security threats or weaknesses.
+                    </p>
+                    <p>
+                        By reviewing activity patterns, I help support early detection and improve awareness
+                        before issues become serious.
+                    </p>
+                </div>
+                <div class="sevices-box">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h2>Security Awareness Training</h2>
+                    <p>
+                        Educating users on cyber threats, safe practices, and threat recognition to reduce
+                        human-related security risks.
+                    </p>
+                </div>
+                <div class="sevices-box">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>IT Support & Maintenance</h2>
+                    <p>
+                        Providing ongoing system support, maintenance, and optimization to ensure reliability,
+                        performance, and minimal downtime.
+                    </p>
+                </div>
             </div>
-
-        </div>
-    </div>
-    <!----------portfolio-------------->
-    <div id="portfolio">
+        </section>
+<!--------------------my work-------------------->
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <div class="about-text">
+                <h2>My Work</h2>
+            </div>
             <div class="worklist">
                 <div class="work">
-                    <img src="images/work-1.png" >
+                    <img src="images/massimo-botturi-zFYUsLk_50Y-unsplash.jpg" >
                     <div class="layer">
                         <h3>Global Engineering Connectivity Platform</h3>
                         <p>Facilitating global collaboration among engineers with a focus on networking and cybersecurity. Ensures secure connectivity and data integrity across borders, fostering innovation and knowledge exchange in the fields of cybersecurity and networking.</p>
@@ -153,7 +332,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png" >
+                    <img src="images/sumup-kmakbD6Nlhc-unsplash.jpg" >
                     <div class="layer">
                         <h3>Secure E-commerce Platform</h3>
                         <p>Empowering secure online transactions with robust cybersecurity measures, ensuring safe and reliable shopping experiences for users.</p>
@@ -161,7 +340,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png" >
+                    <img src="images/yuriy-vertikov-ca9Ex6yVRgw-unsplash (1).jpg" >
                     <div class="layer">
                         <h3>Enhanced Networking Solutions</h3>
                         <p>Empowering organizations with robust networking solutions that optimize connectivity, enhance security, and streamline operations. Our tailored approach integrates cutting-edge technologies to ensure resilient networks capable of supporting modern business demands. From scalable infrastructure design to proactive security measures, we deliver solutions that bolster efficiency, reliability, and cybersecurity resilience.</p>
@@ -169,41 +348,61 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
         </div>
-    </div>
     <!------------contact--------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>aliabdihakimahmed@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>0724237589</p>
-                    <p><i class="fa-solid fa-square-phone"></i>0745840728</p>
-                    <div class="social-icons">
-                         <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                         <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
-                         <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                         <a href="www.linkedin.com/in/abdihakim-ali-ahmed"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/ABDIHAKIM ALI AHMED.pdf" download class="btn btn2">Download CV</a>
+    <section id="contact" class="contact active">
+    <div class="contact-container">
+        <div class="contact-box">
+            <h2>Let's Work Together</h2>
+            <p class="desc">
+                I believe the future is built through strong partnerships, shared ambition, and a commitment to continuous improvement. 
+                I’m open to collaborating with individuals and organizations who value growth, innovation, and integrity. 
+                Whether it’s building systems, strengthening security, or exploring new ideas, I bring focus, adaptability, and a long-term mindset. 
+                Let’s work together to create meaningful solutions and shape a future driven by purpose and technology.
+            </p>
+
+            <div class="contact-detail">
+                <i class="fa-solid fa-phone"></i>
+                <div class="detail">
+                    <p>Phone</p>
+                    <p>(+254) 724237589</p>
+                    <p>(+254) 745840728</p>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="detail">
+                    <p>Email</p>
+                    <p>aliabdihakimahmed@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="detail">
+                    <p>Address</p>
+                    <p>Fedha, Embakasi</p>
+                    <p>Nairobi, Kenya</p>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright &#169; Abdihakim Ali Ahmed, Founder of <i class="fa-solid fa-heart-pulse"></i><li><a href="https://abdihakim-ali.github.io/AfriSecureTech_Hub/" class="btn btn2">AfriSecureTech Hub</a></li></p>
+
+        <div class="contact-box">
+            <form action="">
+                <h2 class="heading">Contact <span>Me!</span></h2>
+                <div class="field-box">
+                    <input type="text" placeholder="Full name" required>
+                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Email Subject" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
     </div>
+</section>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -229,68 +428,6 @@
             sidemeu.style.right = "-200px";
         }
     </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyH73q_USN6BRYOlIf6OJH0hhOgr03vLJZEmOvf7zNoGB7-ykM32Z777cxGa6iKr9e1/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-                function autoType() {
-                                        const phrases = [
-                        "Here to secure and protect 🌐",
-                        "An Enthusiastic IT Technician & Cyber Defender 🔧",
-                        "Committed to making the web a safer place 🌎",
-                        "Pushing boundaries in cybersecurity every day 🚀",
-                        "Future-ready for the evolving digital world 🔒",
-                        "Innovating, learning, and defending 🛠️",
-                        "Join me on a journey of tech and security 💼",
-                    ];
-            let i = 0;
-            let j = 0;
-            const element = document.getElementById("typed-text");
-
-            function type() {
-                if (j < phrases[i].length) {
-                    element.innerHTML += phrases[i][j];
-                    j++;
-                    setTimeout(type, 100); // Typing speed
-                } else {
-                    setTimeout(erase, 1000); // Pause before erasing
-                }
-            }
-
-            function erase() {
-                if (j > 0) {
-                    element.innerHTML = phrases[i].substring(0, j - 1);
-                    j--;
-                    setTimeout(erase, 50); // Erasing speed
-                } else {
-                    i = (i + 1) % phrases.length;
-                    setTimeout(type, 500); // Pause before typing next phrase
-                }
-            }
-
-            type();
-        }
-
-        // Start auto-typing when the page loads
-        window.addEventListener("load", autoType);
-      </script>
       <script>
         var loader = document.getElementById("preloader");
 
@@ -298,6 +435,43 @@
             loader.style.display = "none";
         })
       </script>
+    <script>
+        function opentab(tabName) {
+    var i, tabcontents, tablinks;
+    tabcontents = document.getElementsByClassName("tab-contents");
+    for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+    tablinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+    document.getElementById(tabName).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
+    </script>
+    <!------------------- script for the dots scrolling--------------------->
+    <script>
+        const sections = document.querySelectorAll("section, #header");
+const dots = document.querySelectorAll(".scroll-dots .dot");
 
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    dots.forEach(dot => {
+        dot.classList.remove("active");
+        if (dot.getAttribute("href") === "#" + current) {
+            dot.classList.add("active");
+        }
+    });
+});
+    </script>
 </body>
 </html>

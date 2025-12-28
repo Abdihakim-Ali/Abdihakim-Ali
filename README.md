@@ -1,42 +1,56 @@
 # Blue Team Defender Portfolio
 
 ## 🚀 About Me
-I am a cybersecurity enthusiast specializing in blue team defense. With a passion for protecting networks and systems, I am dedicated to enhancing my skills through hands-on projects and continuous learning. Currently, I am pursuing certifications and building my expertise in security practices.
 
-## 📁 Projects
+I am a cybersecurity enthusiast and IT practitioner with a focus on Blue Team skills. My journey is hands-on, building knowledge through IT troubleshooting, networking, and self-guided cybersecurity labs. I am actively studying for CCNA, Security+, and Pentest+ certifications, and aiming to strengthen my skills in network defense and incident response.
 
-### Project 1: Incident Response Plan
-- **Description**: Developed a comprehensive incident response plan for a hypothetical organization to effectively address security incidents.
-- **Technologies Used**: N/A (Documentation-focused).
+## 📁 Projects & Learning Journey
+1. IT Troubleshooting & Repair
+
+- **Description**: Hands-on work repairing and maintaining computers and IT equipment at Computer Planet.
 - **Key Features**: 
-  - Detailed steps for identification, containment, eradication, recovery, and lessons learned.
-  - Templates for incident reporting and post-incident reviews.
+Diagnosing hardware and software issues.
+Checking for faulty components and restoring functionality.
+Assisting colleagues and customers with technical support.
+Skills Developed: Hardware troubleshooting, software debugging, customer support.
 
-### Project 2: Security Monitoring Dashboard
-- **Description**: Created a real-time security monitoring dashboard using the ELK Stack to visualize security logs and alerts.
-- **Technologies Used**: Elasticsearch, Logstash, Kibana.
+### Project 2: Networking Practice
+
+- **Description**:  Practical experience setting up and configuring small networks in home and work environments.
 - **Key Features**: 
-  - Custom alerts for suspicious activities.
-  - Interactive visualizations for log analysis.
-  - Dashboards for quick insights into security posture.
+Connecting devices, configuring routers, and managing basic network settings.
+Learning network topologies and packet flow.
+Skills Developed: Network setup, IP addressing, basic troubleshooting, CCNA prep.
 
-### Project 3: Vulnerability Assessment
-- **Description**: Conducted a vulnerability assessment on a sample network to identify potential weaknesses and recommend remediation.
-- **Technologies Used**: Nessus, OpenVAS.
+### Project 3: Cybersecurity Learning & Labs
+
+- **Description**:  Self-guided learning and practice in cybersecurity concepts, focusing on Blue Team fundamentals.
 - **Key Features**: 
-  - Detailed risk prioritization based on vulnerability severity.
-  - Comprehensive reporting with remediation strategies.
-  - Demonstrated ability to improve organizational security posture.
+Studying wireless security, Nmap scanning, and encryption protocols.
+Practicing lab exercises such as detecting vulnerabilities, understanding attacks (e.g., Evil Twin), and developing defense strategies.
+Skills Developed: Network security basics, security mindset, vulnerability awareness, lab-based experimentation.
 
-## 🛠 Technologies Used
-- **SIEM Tools**: Splunk, ELK Stack
-- **Vulnerability Assessment Tools**: Nessus, OpenVAS
-- **Network Monitoring Tools**: Wireshark, Snort
-- **Incident Response Frameworks**: NIST, SANS
+### Project 4: Website Development Practice
 
-## 💻 Getting Started
-To view my portfolio, open `index.html` in your web browser. You can also clone this repository to your local machine using the following commands:
+- **Description**:  Personal practice in building small websites to understand design and functionality.
+                 :  Technologies Used: HTML, CSS, basic JavaScript.
+- **Key Features**: 
+Building simple web pages.
+Experimenting with responsive layouts and navigation.
+Skills Developed: Frontend web design fundamentals.
 
-```bash
-git clone https://github.com/yourusername/your-portfolio.git
-cd your-portfolio
+### Project 5: Home Lab Setup
+
+- **Description**:  Setting up a personal lab environment to practice IT and cybersecurity skills.
+- **Key Features**: 
+Using VirtualBox and multiple operating systems to simulate network scenarios.
+Practicing basic security monitoring and troubleshooting in a controlled environment.
+Skills Developed: Virtualization, system setup, hands-on lab experimentation.
+
+🛠 Skills & Tools
+###  🛠 Skills & Tools
+
+### Networking & IT: Routers, switches, Windows & Linux OS, network setup
+### Cybersecurity: Nmap, Wireshark, wireless security, vulnerability awareness
+### Web Development: HTML, CSS, JavaScript
+### Tools: VirtualBox, basic lab setup, RMA tools
