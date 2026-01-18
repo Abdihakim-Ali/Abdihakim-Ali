@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
+<body>
     <div class="scroll-dots">
         <a href="#header" class="dot active"></a>
         <a href="#about" class="dot"></a>
@@ -33,10 +34,10 @@
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        <!-- <div class="header-slider">
+        <div class="header-slider">
                 <img src="images/daniel.jpg" class="slide active">
                 <img src="images/background.jpg" class="slide">
-        </div> -->
+        </div>
         <div class="header-text">
             <h1>Hi, I'm <span>Abdihakim Ali Ahmed,</span><br>from Kenya.</h1>
             <p class="hero-subtext">
@@ -403,68 +404,10 @@
         </div>
     </div>
 </section>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemeu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemeu.style.right = "0";
-        }
-        function closemenu(){
-            sidemeu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        function opentab(tabName) {
-    var i, tabcontents, tablinks;
-    tabcontents = document.getElementsByClassName("tab-contents");
-    for (i = 0; i < tabcontents.length; i++) {
-        tabcontents[i].classList.remove("active-tab");
-    }
-    tablinks = document.getElementsByClassName("tab-links");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active-link");
-    }
-    document.getElementById(tabName).classList.add("active-tab");
-    event.currentTarget.classList.add("active-link");
-}
-    </script>
-    <!------------------- script for the dots scrolling--------------------->
-    <script>
-        const sections = document.querySelectorAll("section, #header");
-const dots = document.querySelectorAll(".scroll-dots .dot");
-
-window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-            current = section.getAttribute("id");
-        }
-    });
-
-    dots.forEach(dot => {
-        dot.classList.remove("active");
-        if (dot.getAttribute("href") === "#" + current) {
-            dot.classList.add("active");
-        }
-    });
-});
-    </script>
+<footer class="super-copyright">
+    <p>© 2026 <span class="your-name">Abdihakim Ali Ahmed</span>. All Rights Reserved.</p>
+    <p>Designed & Built with <span>❤</span> by <span class="your-name">Owner Of AfriSecureTech Hub Nexus</span></p>
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>

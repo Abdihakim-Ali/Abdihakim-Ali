@@ -27,7 +27,7 @@ html{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/daniel.jpg); 
+    /* background-image: url(images/daniel.jpg);  */
     background-size: cover;
     background-position: center;
 }
@@ -133,7 +133,7 @@ nav ul li a:hover::after{
 }
 
 /* Header Slider */
-/* .header-slider {
+ .header-slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -141,7 +141,7 @@ nav ul li a:hover::after{
     height: 100%;
     overflow: hidden;
     z-index: 0; /* behind everything */
-
+ }
 
 .header-slider .slide {
     position: absolute;
@@ -153,17 +153,17 @@ nav ul li a:hover::after{
 }
 
 /* Delay for second image */
-/* .header-slider .slide:nth-child(1) { animation-delay: 0s; }
-.header-slider .slide:nth-child(2) { animation-delay: 5s; } */
+.header-slider .slide:nth-child(1) { animation-delay: 0s; }
+.header-slider .slide:nth-child(2) { animation-delay: 5s; } 
 
-/* Fade animation */
-/* @keyframes slideAnimation {
+/* Fade animation */ 
+@keyframes slideAnimation {
     0% { opacity: 0; }
     10% { opacity: 1; }
     45% { opacity: 1; }
     55% { opacity: 0; }
     100% { opacity: 0; }
-} */ */
+} 
 
 /* Navbar and logo always on top */
 nav {
@@ -492,7 +492,8 @@ ol li::before {
 .services{
     padding: 120px 6%;
     background: #0b0f14;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin: 0;
 } 
 .services h2{
     font-size: 3rem;
@@ -504,8 +505,8 @@ ol li::before {
 
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 50px;
     margin-top: 50px;
 }
 
@@ -556,6 +557,31 @@ ol li::before {
 .services-list div:hover{
     /* background: var(--main-color); */
     transform: translateY(-10px);
+}
+
+/* ===== SERVICES GRID RESPONSIVE FIX ===== */
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktops, 27", 32", ultrawide screens */
+@media (min-width: 1025px) {
+    .services-list {
+        grid-template-columns: repeat(3, 1fr); /* ALWAYS 3 */
+        max-width: 1200px;                     /* prevents stretching */
+        margin: 50px auto 0;                   /* centers grid */
+    }
 }
 
 .worklist{
@@ -625,42 +651,26 @@ ol li::before {
 
 /*-----------------contact-------------*/
 
+#contact {
+    min-height: 100vh;          /* Full screen height */
+    padding: 100px 0;           /* Top & bottom space */
+    display: flex;
+    align-items: center;
+}
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem 6%;
-    margin-top: 40px;
+    gap: 4rem;                  /* More space between columns */
+    padding: 0 6%;
 }
 
-.contact-container .contact-box:first-child {
-    align-self: center;
-}
-
-.contact-box {
-     margin: 0;
-}
-.contact-box h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 2rem;
-}
-
-.contact-box p .desc {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* .contact-box .desc {
-    margin: 1.5rem 0 2.5rem;
-} */
-
+/* Contact details (left side) */
 .contact-detail {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin: 1.5rem 0;
+    gap: 1.5rem;
+    margin: 2.5rem 0;           /* Increased vertical spacing */
 }
 
 .contact-detail i {
@@ -668,27 +678,26 @@ ol li::before {
     background: var(--second-bg-color);
     color: var(--main-color);
     font-size: clamp(1.2rem, 3vw, 1.5rem);
-    padding: .8rem;
-    border-radius: .6rem;
-    margin-right: 1.5rem;
+    padding: 1.2rem;            /* Bigger icons = taller feel */
+    border-radius: .8rem;
 }
 
 .contact-detail .detail p:first-child {
     color: var(--main-color);
 }
 
+/* Contact form (right side) */
 .contact-box form {
     background: var(--second-bg-color);
-    padding: 2rem;
+    padding: 3rem;              /* More internal space */
     border-radius: 1rem;
     text-align: center;
-    margin: 0;
 }
 
 .contact-box .heading {
     font-size: clamp(2rem, 5vw, 3rem);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contact-box .heading span {
@@ -698,12 +707,12 @@ ol li::before {
 .contact-box .field-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;                /* More spacing between inputs */
 }
 
 .contact-box .field-box input,
 .contact-box .field-box textarea {
-    padding: 1rem;
+    padding: 1.2rem;
     background: var(--bg-color);
     border: .15rem solid var(--bg-color);
     border-radius: .6rem;
@@ -712,22 +721,16 @@ ol li::before {
 }
 
 .contact-box .field-box textarea {
-    /* grid-column: 1 / -1; */
-    height: auto;
+    min-height: 160px;          /* Prevent cramped textarea */
     resize: vertical;
 }
 
-.contact-box .field-box input:focus
-.contact-box .field-box textarea:focus {
-    border-color: var(--main-color);
-}
-
 .contact-box .btn {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     cursor: pointer;
     background: var(--main-color);
-    padding: 1rem;
-    border-radius: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 1.8rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
     font-weight: bold;
@@ -754,6 +757,10 @@ ol li::before {
         font-size: clamp(1.5rem, 6vw, 2rem);
     }
 
+    #contact {
+        padding: 100px 0;
+    }
+
     .contact-box .heading {
         font-size: clamp(1.5rem, 6vw, 2rem);
     }
@@ -765,7 +772,7 @@ ol li::before {
 
     .contact-detail i {
         font-size: 1.5rem;
-        padding: 0.6rem;
+        padding: 1rem;
         margin-bottom: 0.5rem;
     }
 
@@ -773,18 +780,61 @@ ol li::before {
         gap: 0.8rem;
     }
 }
-
-.copyright{
-    width: 100%;
+.super-copyright {
+    background: #0b0f14; /* dark background */
+    color: #00ff9c;      /* neon green */
     text-align: center;
-    padding: 25px 0;
-    font-weight: 300;
-    font-size: 16px;
-    margin-top: 70px;
-    margin-bottom: 0;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid #00ff9c;
 }
-.copyright i{
+
+.super-copyright p {
+    margin: 5px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.super-copyright span.your-name {
+    font-weight: normal;
+    color: #fff;
+}
+
+.super-copyright span {
+    color: #ff0099; /* add a pop color */
+}
+
+.super-copyright .social-footer {
+    margin-top: 15px;
+}
+
+.super-copyright .social-footer a {
+    display: inline-block;
+    margin: 0 8px;
     color: #00ff9c;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.super-copyright .social-footer a:hover {
+    color: #ff0099;
+    transform: translateY(-3px);
+}
+
+/* MOBILE OPTIMIZATION */
+@media only screen and (max-width: 600px) {
+    .super-copyright {
+        padding: 25px 15px;
+    }
+    .super-copyright p {
+        font-size: 12px;
+    }
+    .super-copyright .social-footer a {
+        font-size: 16px;
+        margin: 0 6px;
+    }
 }
 
 /*-------------------------css for small screens--------------*/
@@ -859,9 +909,23 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
-    .copyright{
-        font-size: 14px;
 }
+/* ================= MOBILE HEADER IMAGE ONLY ================= */
+@media only screen and (max-width: 600px) {
+
+    /* Hide the slider completely */
+    .header-slider {
+        display: none;
+    }
+
+    /* Use ONE static image instead */
+    #header {
+        background-image: url(images/shubham-dhage-_afH9fjiom0-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
+
 
 
