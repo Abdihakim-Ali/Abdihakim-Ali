@@ -571,6 +571,10 @@ ol li::before {
     overflow: hidden;
 }
 
+.work h2 {
+    margin-top: 40px;
+}
+
 .work img{
     width: 100%;
     border-radius: 10px;
