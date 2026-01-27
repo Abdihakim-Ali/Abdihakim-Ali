@@ -309,6 +309,7 @@ nav {
     color: #00ff9c;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
+    margin-top: 30px;
 }
 .about-text p {
     font-size: 1.05rem;
@@ -428,6 +429,7 @@ nav {
     color: #00ff9c;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
+    margin-top: 30px;
 }
 .card .python {
     margin-top: 70px;
@@ -440,7 +442,7 @@ nav {
 
 .card p {
     color: #aaa;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
@@ -489,38 +491,15 @@ ol li::before {
 }
 
 /*-------------------services-------------*/
-.services{
-    padding: 120px 6%;
-    background: #0b0f14;
-    /* margin-top: 30px; */
-    margin: 0;
-} 
-.services h2{
-    font-size: 3rem;
-    margin-bottom: 25px;
-    color: #00ff9c;
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-}
-
-.services-list{
+.services-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     margin-top: 50px;
 }
 
-.services-box {
+.services-container div{
     background: rgba(255, 255, 255, 0.05);
-    background: #0b0f14;
-    border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.services-list div{
-     background: rgba(255, 255, 255, 0.05);
     padding: 40px;
     font-size: 17px;
     font-weight: 300;
@@ -528,25 +507,31 @@ ol li::before {
     transition: background 0.5s , transform 0.5s;
 }
 
-.services-list div:hover {
+.services-container div:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 255, 156, 0.5);
 }
 
-.services-list div i{
+.services-container div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #00ff9c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
     text-align: center;
-    line-height: 1.5em;
 }
 
-.services-list div a{
+.card p{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.services-container div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -554,33 +539,22 @@ ol li::before {
     display: inline-block;
 }
 
-.services-list div:hover{
+.services-container div:hover{
     /* background: var(--main-color); */
     transform: translateY(-10px);
 }
 
-/* ===== SERVICES GRID RESPONSIVE FIX ===== */
-
 /* Mobile phones */
 @media (max-width: 600px) {
-    .services-list {
+    .services-container {
         grid-template-columns: 1fr;
     }
 }
 
 /* Tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .services-list {
+    .services-container {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Desktops, 27", 32", ultrawide screens */
-@media (min-width: 1025px) {
-    .services-list {
-        grid-template-columns: repeat(3, 1fr); /* ALWAYS 3 */
-        max-width: 1200px;                     /* prevents stretching */
-        margin: 50px auto 0;                   /* centers grid */
     }
 }
 
@@ -694,6 +668,14 @@ ol li::before {
     text-align: center;
 }
 
+.desc {
+    max-width: 900px;     /* limits line length */
+    font-size: 1rem;
+    line-height: 1.5;     /* breathing room */
+    color: #d1d1d1;
+    font-weight:600;
+}
+
 .contact-box .heading {
     font-size: clamp(2rem, 5vw, 3rem);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -736,9 +718,7 @@ ol li::before {
     font-weight: bold;
     width: 100%;
 }
-
 /*======================= MEDIA QUERIES =======================*/
-
 /* Tablet screens */
 @media screen and (max-width: 1024px) {
     .contact-container {
