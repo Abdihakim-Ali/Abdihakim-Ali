@@ -674,10 +674,9 @@ ol li::before {
 
 .desc {
     max-width: 900px;     /* limits line length */
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.5;     /* breathing room */
     color: #d1d1d1;
-    font-weight:600;
 }
 
 .contact-box .heading {
